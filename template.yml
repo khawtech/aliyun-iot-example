@@ -1,0 +1,36 @@
+ROSTemplateFormatVersion: '2015-09-01'
+Transform: 'Aliyun::Serverless-2018-04-03'
+Resources:
+  iotexamplefc:
+    Type: 'Aliyun::Serverless::Service'
+    Properties:
+      Description: 'Function Compute Service for IoT'
+      InternetAccess: true
+      Policies:
+        - AliyunOTSFullAccess
+    index:
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: index.handler
+        Runtime: nodejs8
+        CodeUri: './'
+        Timeout: 15
+    saveData:
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: saveData.handler
+        Runtime: nodejs8
+        CodeUri: './'
+        Timeout: 15
+
+  IoTexample:
+    Type: 'Aliyun::Serverless::TableStore'
+    Properties:
+      ClusterType: HYBRID
+      Description: 'Main Database for IoT'
+    mood_tracking:
+      Type: 'Aliyun::Serverless::TableStore::Table'
+      Properties:
+        PrimaryKeyList:
+          - Name: id
+            Type: STRING

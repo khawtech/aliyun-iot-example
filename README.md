@@ -11,4 +11,4 @@ This examples assumes `ap-southeast-1` as region (Singapore).
 - Create an Iot product following instructions at [Alibaba Cloud IoT Documentation](https://www.alibabacloud.com/help/product/30520.htm).
 
 ## reference material
-- PDF with some information about [MQTT and Alibaba Cloud IoT](/roura356a/aliyun-iot-example/blob/master/IoT%20with%20Alibaba%20Cloud.pdf).
+- PDF with some information about [MQTT and Alibaba Cloud IoT](https://github.com/roura356a/aliyun-iot-example/blob/master/IoT%20with%20Alibaba%20Cloud.pdf).

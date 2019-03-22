@@ -12,3 +12,5 @@ This examples assumes `ap-southeast-1` as region (Singapore).
 
 ## reference material
 - PDF with some information about [MQTT and Alibaba Cloud IoT](https://github.com/roura356a/aliyun-iot-example/blob/master/IoT%20with%20Alibaba%20Cloud.pdf).
+
+[embed]https://github.com/roura356a/aliyun-iot-example/blob/master/IoT%20with%20Alibaba%20Cloud.pdf[/embed]
